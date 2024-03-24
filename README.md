@@ -1,4 +1,5 @@
-# NEXUS_SPHERE
+# NEXUS_SPHERE 
+"Nexus Sphere: DAO empowering Ethereum community with transparent decision-making. Stake, rank, and decide proposals with our intuitive UI."
 
 ## Tech Stack Used:
 - **Metamask:** Browser extension for interacting with Ethereum blockchain and decentralized applications.
