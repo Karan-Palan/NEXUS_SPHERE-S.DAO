@@ -1,6 +1,9 @@
 # NEXUS_SPHERE 
 "Nexus Sphere: DAO empowering Ethereum community with transparent decision-making. Stake, rank, and decide proposals with our intuitive UI."
 
+#### Demo and Local setup : https://www.youtube.com/watch?v=EALMxadR0V4
+#### Pitch : https://www.youtube.com/watch?v=5v4P274GbsU
+
 ## Tech Stack Used:
 - **Metamask:** Browser extension for interacting with Ethereum blockchain and decentralized applications.
 - **Truffle:** Development framework for Ethereum blockchain projects, facilitating smart contract compilation, testing, and deployment.
