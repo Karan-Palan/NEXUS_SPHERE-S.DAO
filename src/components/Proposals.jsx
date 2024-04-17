@@ -9,19 +9,20 @@ const Proposals = () => {
   const [data] = useGlobalState('proposals')
   const [proposals, setProposals] = useState(data)
 
-  const deactive = `bg-transparent
-  text-blue-600 font-medium text-xs leading-tight
-  uppercase hover:bg-blue-700 focus:bg-blue-700
+  const deactive = `bg-transparent w-50
+  text-white font-medium text-l leading-tight
+  uppercase hover:bg-violet-700 focus:bg-blue-700
   focus:outline-none focus:ring-0 active:bg-blue-600
   transition duration-150 ease-in-out overflow-hidden
-  border border-blue-600 hover:text-white focus:text-white`
+  border border-violet-600 hover:text-white focus:text-white`
 
-  const active = `bg-blue-600
-  text-white font-medium text-xs leading-tight
-  uppercase hover:bg-blue-700 focus:bg-blue-700
+const active = `bg-violet-600 w-50
+  text-white font-medium text-l leading-tight
+  uppercase hover:bg-violet-700 focus:bg-blue-700
   focus:outline-none focus:ring-0 active:bg-blue-800
   transition duration-150 ease-in-out overflow-hidden
-  border border-blue-600`
+  border border-violet-600`
+
 
   const getAll = () => setProposals(data)
 
@@ -47,27 +48,31 @@ const Proposals = () => {
   return (
     <div className="flex flex-col p-8">
       <div className="flex flex-row justify-center items-center" role="group">
-        <button
-          aria-current="page"
-          className={`rounded-l-full px-6 py-2.5 ${active}`}
-          onClick={getAll}
-        >
-          All
-        </button>
-        <button
-          aria-current="page"
-          className={`px-6 py-2.5 ${deactive}`}
-          onClick={getOpened}
-        >
-          Open
-        </button>
-        <button
-          aria-current="page"
-          className={`rounded-r-full px-6 py-2.5 ${deactive}`}
-          onClick={getClosed}
-        >
-          Closed
-        </button>
+      <button
+  aria-current="page"
+  className={`rounded-l-full px-6 py-2.5 bg-gradient-to-r from-violet-400 to-violet-800 text-white ${active}`}
+  onClick={getAll}
+  style={{ width: "150px" }} // Adjust the width value as needed
+>
+  All
+</button>
+<button
+  aria-current="page"
+  className={`px-6 py-2.5 ${deactive}`}
+  onClick={getOpened}
+  style={{ width: "150px" }} // Adjust the width value as needed
+>
+  Open
+</button>
+<button
+  aria-current="page"
+  className={`rounded-r-full px-6 py-2.5 ${deactive}`}
+  onClick={getClosed}
+  style={{ width: "150px" }} // Adjust the width value as needed
+>
+  Closed
+</button>
+
       </div>
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">

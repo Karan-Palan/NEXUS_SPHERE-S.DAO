@@ -21,7 +21,7 @@ const App = () => {
   }, [])
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 dark:bg-[#212936] dark:text-gray-300">
+    <div className="min-h-screen bg-white text-gray-900 dark:bg-[#1C1B22] dark:text-gray-300">
       <Header />
       {loaded ? (
         <Routes>
