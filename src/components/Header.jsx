@@ -28,10 +28,9 @@ const Header = () => {
   }
 
   return (
-    <header className="sticky top-0 z-50 dark:text-blue-500 top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
+    <header className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
       <nav
-        className="navbar navbar-expand-lg shadow-md py-2 relative flex items-center w-full justify-between
-      bg-white dark:bg-[#1C1B22]"
+        className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80"
       >
         <div className="px-6 w-full flex flex-wrap items-center justify-between">
           <div className="grow flex flex-row justify-between items-center p-2">
