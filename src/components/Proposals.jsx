@@ -16,7 +16,7 @@ const Proposals = () => {
   transition duration-150 ease-in-out overflow-hidden
   border border-violet-600 hover:text-white focus:text-white`
 
-const active = `bg-violet-600 w-50
+  const active = `bg-violet-600 w-50
   text-white font-medium text-l leading-tight
   uppercase hover:bg-violet-700 focus:bg-blue-700
   focus:outline-none focus:ring-0 active:bg-blue-800
@@ -48,30 +48,30 @@ const active = `bg-violet-600 w-50
   return (
     <div className="flex flex-col p-8">
       <div className="flex flex-row justify-center items-center" role="group">
-      <button
-  aria-current="page"
-  className={`rounded-l-full px-6 py-2.5 bg-gradient-to-r from-violet-400 to-violet-800 text-white ${active}`}
-  onClick={getAll}
-  style={{ width: "150px" }} // Adjust the width value as needed
->
-  All
-</button>
-<button
-  aria-current="page"
-  className={`px-6 py-2.5 ${deactive}`}
-  onClick={getOpened}
-  style={{ width: "150px" }} // Adjust the width value as needed
->
-  Open
-</button>
-<button
-  aria-current="page"
-  className={`rounded-r-full px-6 py-2.5 ${deactive}`}
-  onClick={getClosed}
-  style={{ width: "150px" }} // Adjust the width value as needed
->
-  Closed
-</button>
+        <button
+          aria-current="page"
+          className={`rounded-l-full px-6 py-2.5 bg-gradient-to-r from-violet-400 to-violet-800 text-white ${active}`}
+          onClick={getAll}
+          style={{ width: "150px" }} // Adjust the width value as needed
+        >
+          All
+        </button>
+        <button
+          aria-current="page"
+          className={`px-6 py-2.5 ${deactive}`}
+          onClick={getOpened}
+          style={{ width: "150px" }} // Adjust the width value as needed
+        >
+          Open
+        </button>
+        <button
+          aria-current="page"
+          className={`rounded-r-full px-6 py-2.5 ${deactive}`}
+          onClick={getClosed}
+          style={{ width: "150px" }} // Adjust the width value as needed
+        >
+          Closed
+        </button>
 
       </div>
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -146,7 +146,7 @@ const active = `bg-violet-600 w-50
                       </Link>
 
                       {new Date().getTime() >
-                      Number(proposal.duration + '000') ? (
+                        Number(proposal.duration + '000') ? (
                         proposal.upvotes > proposal.downvotes ? (
                           !proposal.paid ? (
                             <button
@@ -172,14 +172,14 @@ const active = `bg-violet-600 w-50
                           )
                         ) : (
                           <button
-                              className="dark:border rounded-full px-6 py-2.5 dark:border-red-600
+                            className="dark:border rounded-full px-6 py-2.5 dark:border-red-600
                                   dark:text-red-600 dark:bg-transparent font-medium text-xs leading-tight
                                   uppercase hover:border-red-700 focus:border-red-700
                                   focus:outline-none focus:ring-0 active:border-red-800
                                   transition duration-150 ease-in-out text-white bg-red-600"
-                            >
-                              Rejected
-                            </button>
+                          >
+                            Rejected
+                          </button>
                         )
                       ) : null}
                     </td>

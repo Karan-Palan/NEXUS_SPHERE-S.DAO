@@ -44,8 +44,9 @@ const Voters = () => {
       <div className="flex flex-row justify-center items-center" role="group">
         <button
           aria-current="page"
-          className={`rounded-l-full px-6 py-2.5 ${active}`}
+          className={`rounded-l-full px-6 py-2.5 bg-gradient-to-r from-violet-400 to-violet-800 text-white ${active}`}
           onClick={getAll}
+          style={{ width: "150px" }}
         >
           All
         </button>
@@ -53,6 +54,7 @@ const Voters = () => {
           aria-current="page"
           className={`px-6 py-2.5 ${deactive}`}
           onClick={getAccepted}
+          style={{ width: "150px" }} 
         >
           Acceptees
         </button>
@@ -60,6 +62,7 @@ const Voters = () => {
           aria-current="page"
           className={`rounded-r-full px-6 py-2.5 ${deactive}`}
           onClick={getRejected}
+          style={{ width: "150px" }} 
         >
           Rejectees
         </button>
