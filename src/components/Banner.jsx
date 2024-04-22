@@ -56,7 +56,7 @@ const Banner = () => {
       </div>
       <p className='mt-2'>
         {isStakeholder
-          ? 'You can now raise proposals on this platform 😆'
+          ? 'You can now raise proposals on this platform'
           : 'Upon contribution of 1 ETH, You become a stakeholder'}
       </p>
       <div
@@ -74,16 +74,7 @@ const Banner = () => {
         {isStakeholder ? (
           <button
             type="button"
-            className={`inline-block px-6 py-2.5
-            bg-blue-600 text-white font-medium text-xs
-            leading-tight uppercase shadow-md rounded-full
-            hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700
-            focus:shadow-lg focus:outline-none focus:ring-0
-            active:bg-blue-800 active:shadow-lg transition
-            duration-150 ease-in-out dark:text-blue-500
-            dark:border dark:border-blue-500 dark:bg-transparent`}
-            data-mdb-ripple="true"
-            data-mdb-ripple-color="light"
+            className="bg-gradient-to-r from-violet-400 to-violet-800 py-2 px-3 rounded-md text-white"
             onClick={onPropose}
           >
             Propose

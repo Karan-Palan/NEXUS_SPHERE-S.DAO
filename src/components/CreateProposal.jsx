@@ -109,11 +109,7 @@ const CreateProposal = () => {
           </div>
 
           <button
-            className="rounded-lg px-6 py-2.5 bg-blue-600
-              text-white font-medium text-xs leading-tight
-              uppercase hover:bg-blue-700 focus:bg-blue-700
-              focus:outline-none focus:ring-0 active:bg-blue-800
-              transition duration-150 ease-in-out mt-5"
+            className="bg-gradient-to-r from-violet-400 to-violet-800 py-2 px-3 rounded-md text-white"
             onClick={handleSubmit}
           >
             Submit Proposal
