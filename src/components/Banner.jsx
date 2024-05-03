@@ -27,8 +27,8 @@ const Banner = () => {
     ).length
 
   return (
-    <div className="flex flex-row justify-between p-8">
-      <div className="flex flex-col">
+    <div className="flex flex-col md:flex-row justify-between p-8">
+      <div className="flex flex-col md:w-1/2">
         <h2 className="font-semibold text-4xl mb-5">
           {opened()} PROPOSAL{opened() === 1 ? '' : 'S'} CURRENTLY OPENED
         </h2>
@@ -40,7 +40,7 @@ const Banner = () => {
             {isStakeholder ? ', Congratulations on being a stakeholder' : null}
           </span>
         </p>
-        <div className="flex flex-row justify-start items-center md:w-1/3 w-full mt-4">
+        <div className="flex flex-row justify-start items-center w-full mt-4">
           <input
             type="number"
             className="form-control block w-full px-3 py-1.5
@@ -83,18 +83,22 @@ const Banner = () => {
           ) : null}
         </div>
       </div>
-      <div>
+      <div className="w-full md:w-2/3 mt-8 md:mt-0">
         <p className='font-semibold text-xl mb-5'>CONNECTING YOUR WALLET TO A TESTNET IS A CRUCIAL STEP!</p>
-        <iframe
-          width="672"
-          height="378"
-          src="https://www.youtube.com/embed/tKMz3NAdIwg"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <div className="relative" style={{ paddingBottom: "56.25%" }}>
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/tKMz3NAdIwg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
+
+
+
     </div>
   )
 }
