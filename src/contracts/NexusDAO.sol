@@ -7,8 +7,8 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 contract NexusDAO is ReentrancyGuard, AccessControl {
     bytes32 private immutable CONTRIBUTOR_ROLE = keccak256("CONTRIBUTOR");
     bytes32 private immutable STAKEHOLDER_ROLE = keccak256("STAKEHOLDER");
-    uint256 immutable MIN_STAKEHOLDER_CONTRIBUTION = 1 ether; 
-    uint32 immutable MIN_VOTE_DURATION = 2 minutes;
+    uint256 immutable MIN_STAKEHOLDER_CONTRIBUTION = 0.1 ether; 
+    uint32 immutable MIN_VOTE_DURATION = 2 weeks;
     // uint32 immutable MIN_VOTE_DURATION = 5 minutes;
     uint256 totalProposals; // returns total proposals
     uint256 public daoBalance; // returns balance left
