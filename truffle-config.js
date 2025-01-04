@@ -12,7 +12,7 @@ module.exports = {
       network_id: '*', // Match any network id
     },
     sepolia: {
-      provider: () => new HDWalletProvider('surge recall stuff inspire you dumb identify north hazard royal chapter flock', `https://sepolia.infura.io/v3/e60b8dd190884a309227227648c183d4`),
+      provider: () => new HDWalletProvider('add mnemonic', `add sepolia or alchemy url`),
       network_id: 11155111,
       gas: 5500000,
       gasPrice: 10000000000, // Set the desired gas price in Wei (10 Gwei in this example)

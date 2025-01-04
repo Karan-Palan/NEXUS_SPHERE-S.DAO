@@ -20,31 +20,40 @@ To run the demo, follow these steps:
 
 1. Clone the project with the code below.
 ```sh
-# Pre-requisites to install - Git, Nodejs, Truffle, ganache-cli
-git clone git@github.com:KRISH2832/NEXUS_SPHERE.git PROVIDER_NAME
-cd PROVIDER_NAME # Navigate to the new folder.
-yarn install # Installs all the dependencies.
+# Pre-requisites to install - Git, Nodejs, Truffle, ganache-cli and solidity Vscode extension
+git clone git@github.com:KRISH2832/NEXUS_SPHERE.git
+cd NEXUS_SPHERE-S.DAO
+npm i #use node version 17 as truffle is deprecated  
 ```
 
-2. Create an Infuria project, copy and paste your key in the spaces below.
 
-3. Update the `.env` file with the following details.
+2. Deploy the contracts 
 ```sh
-ENDPOINT_URL=<PROVIDER_URL>
-SECRET_KEY=<SECRET_PHRASE>
-DEPLOYER_KEY=<YOUR_PRIVATE_KEY>
+# cd into the src folder to acess the contracts and split the terminal
+cd src
+# Commands for the first terminal
+truffle migrate # will compile and deploy contracts
+# Commands for the second terminal
+ganache-cli -d 
 ```
 
-4. Create a CometChat project, copy and paste your key in the spaces below.
 
-5. Update the `.env` file with the following details.
+2. Deploy the contracts 
 ```sh
-REACT_APP_COMET_CHAT_REGION=<REGION>
-REACT_APP_COMET_CHAT_APP_ID=<APP_ID>
-REACT_APP_COMET_CHAT_AUTH_KEY=<AUTH_KEY>
+# cd into the src folder to acess the contracts and split the terminal
+cd src
+# Commands for the first terminal
+truffle migrate # will compile and deploy contracts
+# Commands for the second terminal
+ganache-cli -d 
 ```
 
-6. Run the app using `yarn start`.
+3. Start the app
+```sh
+npm run start 
+```
+
+
 
 ## Useful Links:
 - [Metamask](https://metamask.io/)
